@@ -4,17 +4,20 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"start": "concurrently \"yarn server\" \"yarn vite\"",
-		"dev": "vite --port 3000",
+		"start": "concurrently \"yarn server\" \"yarn vite --port 3000\"",
+		"dev": "vite ",
 		"server": "json-server -w server/db.json -p 3001",
 		"build": "vue-tsc && vite build",
 		"preview": "vite preview"
 	},
 	"dependencies": {
+		"@heroicons/vue": "^2.0.17",
 		"concurrently": "^8.0.1",
-		"vue": "^3.2.47"
+		"vue": "^3.2.47",
+		"vuedraggable": "^4.1.0"
 	},
 	"devDependencies": {
+		"@types/node": "^18.15.11",
 		"@vitejs/plugin-vue": "^4.1.0",
 		"autoprefixer": "^10.4.14",
 		"json-server": "^0.17.3",
